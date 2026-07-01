@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="李博文个人技术博客文章列表，包含数据分析、Python、SQL、AI 等主题。" />
+  <title>李博文的技术博客 - 文章列表</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <input class="theme-switch visually-hidden" type="checkbox" id="theme-switch" />
+  <div class="site">
+    <header class="topbar">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">李</span>
+          <span>李博文的技术博客</span>
+        </a>
+
+        <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+        <label class="hamburger" for="menu-toggle" aria-label="展开或收起导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a class="active" href="articles.html">文章列表</a></li>
+          <li><a href="#categories">分类</a></li>
+          <li><a href="#archive">归档</a></li>
+        </ul>
+
+        <label class="theme-label" for="theme-switch">切换主题色</label>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="section-head">
+        <div>
+          <h1>文章列表</h1>
+          <p>围绕数据分析、Python、SQL、AI 和项目复盘持续整理。</p>
+        </div>
+      </div>
+
+      <div class="split-layout">
+        <section class="article-list" aria-label="文章列表">
+          <article class="post-card" id="python-commerce">
+            <div>
+              <h2><a href="#python-commerce">用 Python 构建电商销售数据分析流程</a></h2>
+              <p class="meta">2025年06月26日 · 数据分析 / Python</p>
+              <p class="summary">先检查订单表缺失、重复、异常金额和日期格式，再围绕销售额、客单价、复购率、品类贡献度输出业务结论。</p>
+              <div class="tags">
+                <span class="tag">数据分析</span>
+                <span class="tag">Python</span>
+                <span class="tag">电商</span>
+              </div>
+            </div>
+            <span class="read-time">阅读约5分钟</span>
+          </article>
+
+          <article class="post-card" id="sql-retention">
+            <div>
+              <h2><a href="#sql-retention">SQL 窗口函数在用户留存分析中的应用</a></h2>
+              <p class="meta">2025年06月18日 · SQL / 用户分析</p>
+              <p class="summary">使用 row_number、lag、count over 等窗口函数，快速计算新增用户、次日留存和周期活跃用户。</p>
+              <div class="tags">
+                <span class="tag">SQL</span>
+                <span class="tag">留存分析</span>
+              </div>
+            </div>
+            <span class="read-time">阅读约7分钟</span>
+          </article>
+
+          <article class="post-card">
+            <div>
+              <h2><a href="#dashboard">从零搭建可复用的数据看板指标体系</a></h2>
+              <p class="meta">2025年06月09日 · 数据看板 / 可视化</p>
+              <p class="summary">围绕北极星指标、过程指标和诊断指标，设计更容易维护和复用的数据看板结构。</p>
+              <div class="tags">
+                <span class="tag">数据分析</span>
+                <span class="tag">可视化</span>
+              </div>
+            </div>
+            <span class="read-time">阅读约6分钟</span>
+          </article>
+
+          <article class="post-card" id="ai-prompt">
+            <div>
+              <h2><a href="#ai-prompt">AI 辅助数据分析：如何写出稳定提示词</a></h2>
+              <p class="meta">2025年05月30日 · AI / 提示词</p>
+              <p class="summary">将业务目标、字段说明、约束条件和输出格式写清楚，让 AI 在分析任务中更稳定。</p>
+              <div class="tags">
+                <span class="tag">AI</span>
+                <span class="tag">数据分析</span>
+              </div>
+            </div>
+            <span class="read-time">阅读约8分钟</span>
+          </article>
+
+          <article class="post-card">
+            <div>
+              <h2><a href="#pandas">Pandas 数据清洗中最常见的 10 个问题</a></h2>
+              <p class="meta">2025年05月21日 · Python / Pandas</p>
+              <p class="summary">整理缺失值、重复数据、日期格式、字段拆分和类型转换等高频问题及常用处理方式。</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+              </div>
+            </div>
+            <span class="read-time">阅读约6分钟</span>
+          </article>
+
+          <article class="post-card">
+            <div>
+              <h2><a href="#rfm">用 SQL 做 RFM 用户分层分析</a></h2>
+              <p class="meta">2025年05月03日 · SQL / 电商</p>
+              <p class="summary">基于最近消费时间、消费频率和消费金额，对用户进行分层并输出运营可用的标签。</p>
+              <div class="tags">
+                <span class="tag">SQL</span>
+                <span class="tag">RFM</span>
+              </div>
+            </div>
+            <span class="read-time">阅读约7分钟</span>
+          </article>
+        </section>
+
+        <aside>
+          <section class="panel" id="categories">
+            <h3>文章分类</h3>
+            <ul class="category-list">
+              <li><a href="#python-commerce"><span>数据分析</span><strong>4</strong></a></li>
+              <li><a href="#pandas"><span>Python</span><strong>3</strong></a></li>
+              <li><a href="#sql-retention"><span>SQL</span><strong>2</strong></a></li>
+              <li><a href="#ai-prompt"><span>AI 应用</span><strong>2</strong></a></li>
+              <li><a href="#dashboard"><span>可视化</span><strong>1</strong></a></li>
+            </ul>
+          </section>
+
+          <section class="archive-card" id="archive">
+            <h3>归档</h3>
+            <ul class="timeline">
+              <li><strong>2025年06月</strong><br />电商分析、SQL 留存、数据看板</li>
+              <li><strong>2025年05月</strong><br />AI 分析、Pandas 清洗、RFM 分层</li>
+              <li><strong>2025年04月</strong><br />简历项目、课程项目复盘</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">© 2026 李博文 · StaticBlog Theme · HTML5 + CSS3</div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="李博文的个人技术博客首页，记录数据分析、Python、SQL 与 AI 学习笔记。" />
+  <title>李博文的技术博客 - 首页</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <input class="theme-switch visually-hidden" type="checkbox" id="theme-switch" />
+  <div class="site">
+    <header class="topbar">
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">李</span>
+          <span>李博文的技术博客</span>
+        </a>
+
+        <input class="menu-toggle" type="checkbox" id="menu-toggle" />
+        <label class="hamburger" for="menu-toggle" aria-label="展开或收起导航">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">首页</a></li>
+          <li><a href="articles.html">文章列表</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#latest">最新文章</a></li>
+        </ul>
+
+        <label class="theme-label" for="theme-switch">切换主题色</label>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <p class="eyebrow">Data Analysis · Python · SQL · AI</p>
+          <h1>用项目记录成长，用数据解释问题。</h1>
+          <p class="hero-text">
+            这里整理我的数据分析学习笔记、课程项目复盘和求职准备内容，重点关注 Python、SQL、可视化和 AI 工具在业务分析中的应用。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="articles.html">查看文章列表</a>
+            <a class="button button-ghost" href="#about">了解我</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" id="about">
+          <div class="avatar">李</div>
+          <h2>李博文</h2>
+          <p>数据科学与大数据技术 · 大三 · 正在寻找数据分析实习</p>
+          <div class="stats" aria-label="博客统计">
+            <div class="stat">
+              <strong>12</strong>
+              <span>文章</span>
+            </div>
+            <div class="stat">
+              <strong>5</strong>
+              <span>分类</span>
+            </div>
+            <div class="stat">
+              <strong>18</strong>
+              <span>标签</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="latest" aria-labelledby="latest-title">
+        <div class="section-head">
+          <div>
+            <h2 id="latest-title">最新文章</h2>
+            <p>精选近期的数据分析与技术学习记录。</p>
+          </div>
+          <a class="button button-ghost" href="articles.html">全部文章</a>
+        </div>
+
+        <div class="posts-grid">
+          <article class="post-card">
+            <h3><a href="articles.html#python-commerce">用 Python 构建电商销售数据分析流程</a></h3>
+            <p class="meta">2025年06月26日 · 阅读约5分钟</p>
+            <p class="summary">从数据清洗、异常值处理到指标拆解，整理适合项目展示的分析流程。</p>
+            <div class="tags">
+              <span class="tag">数据分析</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <h3><a href="articles.html#sql-retention">SQL 窗口函数在留存分析中的应用</a></h3>
+            <p class="meta">2025年06月18日 · 阅读约7分钟</p>
+            <p class="summary">用窗口函数拆解新增、活跃和留存指标，减少复杂嵌套查询。</p>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">用户分析</span>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <h3><a href="articles.html#ai-prompt">AI 辅助数据分析：如何写出稳定提示词</a></h3>
+            <p class="meta">2025年05月30日 · 阅读约8分钟</p>
+            <p class="summary">把业务背景、字段说明和输出格式讲清楚，让 AI 分析结果更可控。</p>
+            <div class="tags">
+              <span class="tag">AI</span>
+              <span class="tag">效率工具</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">© 2026 李博文 · StaticBlog Theme · HTML5 + CSS3</div>
+    </footer>
+  </div>
+</body>
+</html>
